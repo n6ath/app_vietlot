@@ -1,0 +1,48 @@
+---BlockBench---
+---Blender---
+1 vertex
+2 edge
+3 face
+K +(C) để cắt chọn điểm vertex
+M để gộp merge
+E +(X Y Z) + Số để kéo dài khối 
+Tab để vào chế độ Edit hoặc ngược lại
+A để chọn toàn bộ khối
+Bấm lăn chuột để di chuyển 3D (giữ Shift để di chuyển 2D)
+S + (X Y Z) + Số để thay đổi tọa độ hoặc scale 
+Ctrl+R chia đôi khối
+Ctrl+B để mở rộng chia đôi khối
+` để thay đổi góc nhìn
+Chuội trái + bấm G để move vertex (G + X,G + Y,G + Z + Ctrl để thay đổi vị trí tọa độ)
+
+
+======Cách chạy backend=======
+python update_data.py --crawl
+cd D:\vietlot_project\backend
+python -m pip install -r requirements.txt
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+API sẽ chạy tại:http://127.0.0.1:8000 
+
+Kiểm tra:http://127.0.0.1:8000/api/health
+
+=======Cách chạy Flutter=======
+cd D:\vietlot_project\frontend
+flutter clean
+flutter pub get
+flutter build apk --debug --dart-define=API_BASE_URL=http://192.168.1.60:8000
+flutter run
+
+
+https://huggingface.co/spaces/relvistcb/AILottoEngine/blob/main/predictor.py
+
+
+
+
+
+
+
+
+
+
+

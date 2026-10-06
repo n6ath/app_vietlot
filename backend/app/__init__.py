@@ -1,0 +1,2 @@
+"""Vietlott backend application package."""
+
